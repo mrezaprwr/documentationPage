@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<!--Google Font  - Source Sans Pro -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+	<nav id="navbar">
+		<header>Vue js Docs</header>
+		<ul>
+			<li>
+				<a href="" class="nav-link">What is Vue.js?</a>
+			</li>
+			<li>
+				<a href="" class="nav-link">Getting Started</a>
+			</li>
+			<li>	
+				<a href="" class="nav-link">Declarative Rendering</a>
+			</li>
+			<li>
+				<a href="" class="nav-link">Conditionals and Loops</a>
+			</li>
+			<li>
+				<a href="" class="nav-link">References</a>
+			</li>
+		</ul>
+	</nav>
+
+	<main id="main-doc">
+		<section class="main-section" id="What_is_Vue">
+			<header class="topic">What is Vue.js?</header>
+			<p>Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. 
+				Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable.
+				The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects.
+			</p>
+		</section>
+		<section class="main-section" id="Getting_Started">
+			<header class="topic">Getting Started</header>
+			<p>
+				The easiest way to try out Vue.js is using the JSFiddle Hello World example. 
+				Feel free to open it in another tab and follow along as we go through some basic examples. 
+				Or, you can create an index.html file and include Vue with:
+			</p>
+			<code></code>
+			<p>
+				The Installation page provides more options of installing Vue.
+				Note: We do not recommend that beginners start with vue-cli, 
+				especially if you are not yet familiar with Node.js-based build tools.
+			</p>
+		</section>
+		<section class="main-section" id="Declarative_Rendering">
+			<header class="topic">Declarative Rendering</header>
+			<p>
+				At the core of Vue.js is a system that enables us to declaratively render data to the DOM 
+				using straightforward template syntax:
+			</p>
+			<code></code>
+			<code></code>
+			<div class="output">
+
+			</div>
+			<p>
+				We have already created our very first Vue app! This looks pretty similar to rendering a string template, 
+				but Vue has done a lot of work under the hood. 
+				The data and the DOM are now linked, and everything is now reactive. 
+			</p>
+			<code></code>
+			<code></code>
+			<div class="output">
+
+			</div>
+			<p>
+				Here we are encountering something new. The v-bind attribute you are seeing is called a directive. 
+				Directives are prefixed with v- to indicate that they are special attributes provided by Vue, 
+				and as you may have guessed, they apply special reactive behavior to the rendered DOM.
+			</p>
+		</section>
+		<section class="main-section" id="Conditionals_and_Loops">
+			<header class="topic">Conditionals and Loops</header>
+			<p>
+				It’s easy to toggle the presence of an element, too:
+			</p>
+			<code></code>
+			<code></code>
+			<div class="output">
+
+			</div>
+			<p>
+				Go ahead and enter app3.seen = false in the console. You should see the message disappear.
+			</p>
+			<p>
+				This example demonstrates that we can bind data to not only text and attributes, 
+				but also the structure of the DOM. Moreover, Vue also provides a powerful transition effect system 
+				that can automatically apply transition effects when elements are inserted/updated/removed by Vue.
+			</p>
+			<code></code>
+			<code></code>
+			<div class="output">
+
+			</div>
+			<p>
+				In the console, enter app4.todos.push({ text: 'New item' }). 
+				You should see a new item appended to the list.
+			</p>
+		</section>
+		<section class="main-section" id="References">
+			<header class="topic">References</header>
+			<p>
+				All the documentation in this page is taken from <a href="https://vuejs.org/v2/guide/">Vue.js</a>
+			</p>
+			<code></code>
+		</section>		
+	</main>
+
+</body>
+</html>

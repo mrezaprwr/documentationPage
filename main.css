@@ -1,0 +1,47 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem; 
+    line-height: 1.5;
+}
+nav#navbar{
+    position: fixed;
+    height: 100%;
+    width: 290px;
+    top: 0;
+    left: 0;
+    border-right: 4px solid #dcdcdc;
+}
+    #navbar header{
+        font-size: 2rem;
+        padding-left: 0.85rem;
+        padding-right: 0.85rem;
+        margin-top: 1rem;
+    }
+    #navbar ul{
+        padding-left: 0;
+        font-size: 1.4rem;
+        list-style-type: none; 
+    }
+    #navbar li{
+        padding: 0.5rem;
+        padding-left: 1rem;
+        padding-top: 0.85rem;
+        padding-bottom: 0.85rem;
+        border-top: 1px solid #eee;
+    }
+    a.nav-link{
+        text-decoration: none;
+        color: #000;
+    }
+
+main#main-doc{
+    margin-left: 300px; 
+    position: absolute;
+    top: 1rem;
+
+}
+    header.topic{
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-size: 1.9rem;
+    }
