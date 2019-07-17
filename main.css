@@ -1,6 +1,6 @@
 body{
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1rem; 
+    font-size: 1.1rem; 
     line-height: 1.5;
 }
 nav#navbar{
@@ -44,4 +44,10 @@ main#main-doc{
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
         font-size: 1.9rem;
+    }
+section.main-section{
+
+}
+    .main-section code{
+        background-color: #000;
     }

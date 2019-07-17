@@ -6,8 +6,11 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<!--Google Font  - Source Sans Pro -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap" rel="stylesheet"> 
+	
+	<link rel="stylesheet" type="text/css" href="google-code-prettify/prettify.css">	
+	
 </head>
-<body>
+<body onload="PR.prettyPrint()">
 	<nav id="navbar">
 		<header>Vue js Docs</header>
 		<ul>
@@ -44,7 +47,11 @@
 				Feel free to open it in another tab and follow along as we go through some basic examples. 
 				Or, you can create an index.html file and include Vue with:
 			</p>
-			<code></code>
+			
+			<code class="prettyprint lang-html">
+				<!-- development version, includes helpful console warnings -->
+				<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+			</code>
 			<p>
 				The Installation page provides more options of installing Vue.
 				Note: We do not recommend that beginners start with vue-cli, 
@@ -114,6 +121,6 @@
 			<code></code>
 		</section>		
 	</main>
-
+	<script type="text/javascript" src="google-code-prettify/prettify.js"></script>
 </body>
 </html>
