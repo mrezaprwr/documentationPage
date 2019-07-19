@@ -16,6 +16,20 @@ nav#navbar{
         padding-left: 0.85rem;
         padding-right: 0.85rem;
         margin-top: 1rem;
+        overflow: auto;
+        margin-bottom: 1rem;
+
+        border-bottom: 1px solid #eee;
+    }
+    #navbar img{
+        display: inline-block;
+        float: left;
+        width: 18%;
+    }
+    #navbar span{
+        display: inline-block;
+        float: right;
+        margin-right: 5rem;
     }
     #navbar ul{
         padding-left: 0;
@@ -25,9 +39,15 @@ nav#navbar{
     #navbar li{
         padding: 0.5rem;
         padding-left: 1rem;
-        padding-top: 0.85rem;
-        padding-bottom: 0.85rem;
-        border-top: 1px solid #eee;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+
+        margin-bottom: 0.7rem;
+    }
+    #navbar li:hover{
+        font-weight: 700;
+        padding-left: 1.8rem;
+        border-left: 4px solid green;
     }
     a.nav-link{
         text-decoration: none;
@@ -38,16 +58,35 @@ main#main-doc{
     margin-left: 300px; 
     position: absolute;
     top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
 }
     header.topic{
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
         font-size: 1.9rem;
+        font-weight: 600;
     }
 section.main-section{
 
 }
-    .main-section code{
-        background-color: #000;
+    .main-section pre{
+        position: relative;
     }
+    .main-section code{
+        display: block;
+        background-color: #f8f8f8;
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+.output{
+    border: 1px solid #eee;
+    border-radius: 4px;
+
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    font-size: 1rem;
+    color: #304455;
+}
