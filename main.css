@@ -37,6 +37,9 @@ nav#navbar{
         font-size: 1.4rem;
         list-style-type: none; 
     }
+    a.closebtn{
+        display: none;
+    }
     #navbar li{
         padding: 0.5rem;
         padding-left: 1rem;
@@ -69,6 +72,9 @@ main#main-doc{
         font-size: 1.9rem;
         font-weight: 600;
     }
+#ham-bar{
+    display: none;
+}
 section.main-section{
 
 }
@@ -106,10 +112,34 @@ section.main-section{
 
 @media screen and (max-width: 479px){
     nav#navbar{
-        display: none;
+        
     }
+    a.closebtn{
+        display: block;
+    }
+    #ham-bar{
+        display: block;
+        margin-left: 1rem;
+        margin-top: 0.7rem;
+    }
+    nav#navbar{
+        width: 260px;
+    }
+    #navbar li{
+        font-size: 1.3rem;
+        padding-left: 1.6rem;
+    }
+        #ham-bar span{
+            font-size: 30px;
+            cursor: pointer;
+            padding-left: 0.3rem;
+            padding-right: 0.3rem;
+            padding-top: 0px;
+
+            border: 1px solid #000;
+            border-radius: 2px;
+        }
     main#main-doc{
-        margin-left: 0;
-        margin-top: 1rem;
+        margin-top: 3.5rem;
     }
 }
