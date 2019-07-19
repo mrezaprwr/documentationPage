@@ -20,7 +20,7 @@
 		</header>
 		<ul>
 			<li>
-				<a href="#What_is_Vue" class="nav-link">What is Vue.js?</a>
+				<a href="#What_is_Vue.js?" class="nav-link">What is Vue.js?</a>
 			</li>
 			<li>
 				<a href="#Getting_Started" class="nav-link">Getting Started</a>
@@ -38,7 +38,7 @@
 	</nav>
 
 	<main id="main-doc">
-		<section class="main-section" id="What_is_Vue">
+		<section class="main-section" id="What_is_Vue.js?">
 			<header class="topic">What is Vue.js?</header>
 			<p>Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. 
 				Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable.
@@ -52,7 +52,7 @@
 				Feel free to open it in another tab and follow along as we go through some basic examples. 
 				Or, you can create an index.html file and include Vue with:
 			</p>
-			<code>
+			<code class="block-code">
 				Original source code will be attached here.
 				<br>
 				Original source code will be attached here.
@@ -69,12 +69,23 @@
 				At the core of Vue.js is a system that enables us to declaratively render data to the DOM 
 				using straightforward template syntax:
 			</p>
-			<code>
+			<code class="block-code">
 				Original source code will be attached here.
 				<br>
 				Original source code will be attached here.
 			</code>	
-			<code>
+			<ul>
+				<li>
+					Vue also provides the <code>v-model</code>directive that makes two-way binding between form input and app state a breeze:
+				</li>
+				<li>
+					To let users interact with your app, we can use the <code>v-on</code> directive to attach event listeners that invoke methods on our Vue instances:
+				</li>
+				<li>
+					We’ve briefly introduced the most basic features of Vue.js core - the rest of this guide will cover them and other advanced features with much finer details, so make sure to read through it all!
+				</li>
+			</ul>
+			<code class="block-code">
 				Original source code will be attached here.
 				<br>
 				Original source code will be attached here.
@@ -87,12 +98,20 @@
 				but Vue has done a lot of work under the hood. 
 				The data and the DOM are now linked, and everything is now reactive. 
 			</p>
-			<code>
+			<code class="block-code">
 				Original source code will be attached here.
 				<br>
 				Original source code will be attached here.
 			</code>	
-			<code>
+			<ul>
+				<li>
+					Go ahead and enter <code>app3.seen = false</code>in the console. You should see the message disappear.
+				</li>
+				<li>
+					Now you can compose it in another component’s template:
+				</li>
+			</ul>
+			<code class="block-code">
 				Original source code will be attached here.
 				<br>
 				Original source code will be attached here.
@@ -111,12 +130,12 @@
 			<p>
 				It’s easy to toggle the presence of an element, too:
 			</p>
-			<code>
+			<code class="block-code">
 				Original source code will be attached here.
 				<br>
 				Original source code will be attached here.
 			</code>	
-			<code>
+			<code class="block-code">
 				Original source code will be attached here.
 				<br>
 				Original source code will be attached here.
@@ -132,12 +151,12 @@
 				but also the structure of the DOM. Moreover, Vue also provides a powerful transition effect system 
 				that can automatically apply transition effects when elements are inserted/updated/removed by Vue.
 			</p>
-			<code>
+			<code class="block-code">
 				Original source code will be attached here.
 				<br>
 				Original source code will be attached here.
 			</code>	
-			<code>
+			<code class="block-code">
 				Original source code will be attached here.
 				<br>
 				Original source code will be attached here.
@@ -146,7 +165,7 @@
 				Output of code will be shown here.
 			</div>
 			<p>
-				In the console, enter app4.todos.push({ text: 'New item' }). 
+				In the console, enter <code>app4.todos.push({ text: 'New item' }). </code>
 				You should see a new item appended to the list.
 			</p>
 		</section>
@@ -158,6 +177,7 @@
 		</section>		
 	</main>
 	<script type="text/javascript" src="google-code-prettify/prettify.js"></script>
-	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+	
 </body>
 </html>
