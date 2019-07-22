@@ -3,7 +3,7 @@ body{
     font-size: 1.1rem; 
     line-height: 1.5;
 }
-nav#navbar{
+#navbar{
     position: fixed;
     height: 100%;
     width: 290px;
@@ -53,17 +53,18 @@ nav#navbar{
         padding-left: 1.8rem;
         border-left: 4px solid green;
     }
-    a.nav-link{
+    .nav-link{
+        display: block;
         text-decoration: none;
         color: #000;
     }
-
 main#main-doc{
     margin-left: 300px; 
     position: absolute;
     top: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    transition: margin-left .4s;
 
 }
     header.topic{
@@ -112,7 +113,7 @@ section.main-section{
 
 @media screen and (max-width: 479px){
     nav#navbar{
-        
+        display: none;
     }
     #close-wrapper{
         text-align: right;
@@ -130,13 +131,16 @@ section.main-section{
     a.closebtn:hover{
         font-weight: 600;
     }
+    main#main-doc{
+        margin-left: 0;
+    }
     #ham-bar{
         display: block;
         margin-left: 1rem;
         margin-top: 0.7rem;
     }
     nav#navbar{
-        width: 260px;
+        width: 0;
     }
     #navbar header{
         display: none;

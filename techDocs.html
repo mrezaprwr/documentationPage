@@ -12,13 +12,13 @@
 </head>
 <body>
 	<nav id="navbar">
-		<header>
+		<header id="header-nav">
 			<div>
 				<img src="https://vuejs.org/images/logo.png" alt="vue-logo">
 				<span>Vue js</span>
 			</div>
 		</header>
-		<ul>
+		<ul class="list-link">
 			<div id="close-wrapper">
 				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			</div>
@@ -41,6 +41,7 @@
 	</nav>
 	<div id="ham-bar">
 		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		
 	</div>
 	<main id="main-doc">
 		<section class="main-section" id="What_is_Vue.js?">
@@ -188,17 +189,20 @@
 		document.getElementById("navbar").style.width = "260px";
 		document.getElementById("ham-bar").style.marginLeft = "290px";
 		document.getElementById("main-doc").style.marginLeft = "290px";
+		document.getElementById("navbar").style.display = "block";
 		}
 
 		function closeNav() {
 		document.getElementById("navbar").style.width = "0";
 		document.getElementById("main-doc").style.marginLeft= "0";
+		document.getElementById("ham-bar").style.marginLeft = "1rem";
+		document.getElementById("navbar").style.display = "none";
 		}
 	</script>
 
 	<!-- CDN Link Script-->
 	<script type="text/javascript" src="google-code-prettify/prettify.js"></script>
-	<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	
 </body>
 </html>
