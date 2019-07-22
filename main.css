@@ -114,8 +114,21 @@ section.main-section{
     nav#navbar{
         
     }
+    #close-wrapper{
+        text-align: right;
+    }
     a.closebtn{
-        display: block;
+        display: inline-block;
+        top: 0;
+        font-size: 42px;
+        font-weight: 500;
+        
+        text-decoration: none;
+        color: black;
+        margin-right: 1rem;
+    }
+    a.closebtn:hover{
+        font-weight: 600;
     }
     #ham-bar{
         display: block;
@@ -124,6 +137,9 @@ section.main-section{
     }
     nav#navbar{
         width: 260px;
+    }
+    #navbar header{
+        display: none;
     }
     #navbar li{
         font-size: 1.3rem;
